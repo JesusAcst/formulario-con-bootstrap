@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <!-- Titulo -->
+        <h1>Formulario con Bootstrap</h1>
+        <!-- Navegación -->
+        <nav class="nav justify-content-center">
+          <a class="nav-link" href="">Inicio</a>
+          <a class="nav-link" href="">Servicios</a>
+          <a class="nav-link" href="">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <!-- Mención a la actividad -->
+            <p class="text-center text-muted">Actividad U3 - Formulario con HTML, CSS y Bootstrap.</p>
+            <form id="myForm">
+                <div class="row">
+                    <!-- Labels. Nombre: -->
+                    <div class="col-md-6 mb-3">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre" required>
+                    </div>
+
+                    <!-- Género: -->
+                    <div class="col-md-6 mb-3">
+                        <label for="genero" class="form-label">Género</label>
+                        <select class="form-select" id="genero" required>
+                            <option value="">Selecciona tu género</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Dirección: -->
+                    <div class="col-md-6 mb-3">
+                        <label for="direccion" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="direccion" placeholder="Introduce tu dirección" required>
+                    </div>
+
+                    <!-- Email: -->
+                    <div class="col-md-6 mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Dirección de Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduce tu email" required>
+                        <div id="emailHelp" class="form-text"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Teléfono: -->
+                    <div class="col-md-6 mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" placeholder="Introduce tu teléfono" required>
+                    </div>
+
+                    <!-- Comentarios: -->
+                    <div class="col-md-6 mb-3">
+                        <label for="comentarios" class="form-label">Comentarios</label>
+                        <textarea class="form-control" id="comentarios" rows="3" placeholder="Deja aqui tus comentarios" required></textarea>
+                    </div>
+                </div>
+
+                <!-- Checkbox: -->
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                  <label class="form-check-label" for="exampleCheck1">Acepto los términos y condiciones</label>
+                </div>
+
+                <!-- Botón Enviar: -->
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Hecho por Jesus Acosta - Ingenieria en software  &copy; 2024</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Mensaje de Alerta al enviar informacion -->
+    <script src="app.js"></script>
+    
+</body>
+</html>
